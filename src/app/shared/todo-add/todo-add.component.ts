@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-todo-add',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoAddComponent implements OnInit {
 
-  constructor() { }
+  @Input() isAddWidget?: boolean;
+
+  constructor() {}
 
   ngOnInit(): void {
   }

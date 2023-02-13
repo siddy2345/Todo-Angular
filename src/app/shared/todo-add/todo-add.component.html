@@ -1,1 +1,13 @@
-<p>todo-add works!</p>
+<div class="addTodoWidget">
+  <form>
+    <input type="text">
+    <div *ngIf="isAddWidget then buttonAddWidget; else buttonAddTodoToWidget"></div>
+    <ng-template #buttonAddWidget>
+      <button type="button">+ Erstellen</button>
+    </ng-template>
+    <ng-template #buttonAddTodoToWidget>
+      <button type="button">+</button>
+    </ng-template>
+  </form>
+
+</div>
