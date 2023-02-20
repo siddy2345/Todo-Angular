@@ -10,11 +10,14 @@ li {
   float: left;
 }
 
+.logoLink {
+  float: right;
+}
+
 a {
   display: block;
   text-decoration: none;
   padding: 1rem 1rem;
   color: white;
 }
-
 

@@ -18,9 +18,9 @@ export interface TodoWidgetsModel {
   /** Title (string) */
   title: string;
   /** CreatedAt (Date) */
-  createdAt: Date;
+  createdAt: number;
   /** EditedAt (DAte) */
-  editedAt: Date;
+  editedAt: number;
   /** Todos (TodoModel[]) */
-  todos: TodoModel[];
+  todos: TodoModel[] | undefined;
 }

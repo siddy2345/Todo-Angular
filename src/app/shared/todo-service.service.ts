@@ -18,6 +18,8 @@ export class TodoServiceService {
   }
 
   postTodoWidget(todoWidget: TodoWidgetsModel): Observable<number> {
+    localStorage.setItem(todoWidget.id.toString(), JSON.stringify(todoWidget));
+
     return of();
   }
 

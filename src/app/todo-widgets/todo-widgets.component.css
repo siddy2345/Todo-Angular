@@ -19,9 +19,14 @@ h5 {
 .widgets {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
-
+.widgetTitle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
 
 @media only screen and (max-width: 768px) {
   /* mobile phones */
@@ -30,5 +35,10 @@ h5 {
     flex-direction: column;
     align-items: center;
 
+  }
+
+  [class="todoAdd"] {
+    display: flex;
+    justify-content: center;
   }
 }
